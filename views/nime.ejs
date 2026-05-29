@@ -1,0 +1,288 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home
+    </title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="w-full h-screen max-h-full bg-black text-white">
+    <div class="pb-20">
+        <div class="relative h-full w-full">
+            <ul class="flex fixed bg-black bottom-0 text-xs z-20 justify-evenly w-full py-3 px-2">
+                <li
+                    class="cursor-pointer flex flex-col items-center gap-y-0.5 border-r-2 md:border-b-2 md:border-r-0 md:px-0 md:pb-2 px-2 border-l-2 md:border-l-0 hover:opacity-70">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg> Account
+                </li>
+                <li
+                    class="cursor-pointer flex flex-col items-center gap-y-0.5 border-r-2 md:border-b-2 md:border-r-0 md:pr-0 md:pb-2 pr-2 hover:opacity-70">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg> Cari
+                </li>
+                <li
+                    class="cursor-pointer flex flex-col items-center gap-y-0.5 border-r-2 md:border-b-2 md:border-r-0 md:pr-0 md:pb-2 pr-2 hover:opacity-70">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-journal-bookmark" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8" />
+                        <path
+                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                        <path
+                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                    </svg> Bookmark
+                </li>
+                <li
+                    class="cursor-pointer flex flex-col items-center gap-y-0.5 border-r-2 md:border-b-2 md:border-r-0 md:pr-0 md:pb-2 pr-2 hover:opacity-70">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-book-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                    </svg> Pustaka
+                </li>
+                <li
+                    class="cursor-pointer flex flex-col items-center gap-y-0.5 border-r-2 md:border-b-2 md:border-r-0 md:pr-0 md:pb-2 pr-2 hover:opacity-70">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trophy-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935" />
+                    </svg> Trending
+                </li>
+            </ul> -->
+<div class="font-robot text-center px-0.5 pt-2">
+    <h1 class="text-3xl font-extrabold pb-0.5 text-orange-400">KOMIKAPK</h1>
+    <h3 class="text-lg pb-2 font-bold text-slate-100">KOMIKAPK - <span class="font-action">Baca Manhwa
+            Indo</span></h3>
+    <h5 class="text-md font-action font-bold">Komunitas baca komik, manga, manhwa, manhua bahasa indonesia
+    </h5>
+</div>
+<div>
+    <div class="grid grid-cols-2 md:grid-cols-4 md:px-5 xl:grid-cols-6 px-1.5 gap-3 pt-10">
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+        <div class="w-full bg-amber-950 md:h-80 pb-10 overflow-hidden h-72 rounded-lg">
+            <div style="background-image: url('./../onepiece.webp');"
+                class="bg-cover hover:opacity-70 hover:scale-105 relative bg-no-repeat bg-center h-full italic cursor-pointer font-bold w-full z-10">
+                <p
+                    class="absolute top-0 left-0 md:text-xl md:py-1 md:px-2.5 rounded-br-xl bg-black font-action text-md py-0.5 px-1 text-center text-orange-400">
+                    CH. 60
+                </p>
+                <p
+                    class="absolute top-0 right-0 bg-amber-950 py-0.5 px-2 md:px-3 md:py-1 md:text-lg rounded-bl-xl text-slate-100">
+                    Manga
+                </p>
+            </div>
+            <h1 class="w-full text-center py-2.5 font-medium bg-opacity-70 text-sm text-slate-100">
+                judul</h1>
+        </div>
+    </div>
+</div>
+<!-- </div>
+    </div>
+</body>
+
+</html> -->

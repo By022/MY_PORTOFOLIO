@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('./font/Lobster.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Robot';
+    src: url('./font/Robot.woff') format('woff')
+}
+@font-face {
+    font-family: 'Action';
+    src: url('./font/Action_Man.ttf') format('truetype')
+}
+
+@layer components {
+  .btn-cool {
+    @apply rounded-xl bg-gradient-to-r from-sky-500 to-blue-500 px-6 py-3 font-bold text-white shadow-lg transition-transform hover:scale-105;
+  }
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  @apply rounded-2xl p-4; /* Kamu tetap bisa mencampur dengan @apply */
+}
+
+@theme {
+  --font-lobster: "Lobster", ui-sans-serif, system-ui;
+  --font-robot: "Robot", ui-sans-serif, system-ui;
+  --font-action: "Action", ui-sans-serif, system-ui;
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+/* 
+  @keyframes fade-in-scale {
+    0% {
+      transform: 'translateY(100%)';
+      opacity: '0'
+    }
+    10% {
+        opacity: '1'
+    }
+    90% {
+        opacity: '1'
+    }
+    100% {
+      transform: 'translateY(-100%)';
+      opacity: '0'
+    }
+  } */
+} /* Hapus koma di sini */
